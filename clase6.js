@@ -31,8 +31,16 @@ function imprimirNombreEnMayuscula3(persona) {
     console.log(persona.nombre.toUpperCase())
 }
 
+// NUEVA FORMA DE ECMASCRIPT Y UNA DE LAS QUE MÁS E ESTÁ USANDO
+// en esta forma se le pasa el valor del objeto y se coloca en los parametros de la función
+
+function imprimirNombreEnMayuscula4({ nombre }) {
+    console.log(nombre.toUpperCase())
+}
+
 // para acceder a las claves del objeto se usa .nombre o .apellido o .edad, depende que valor que quieras
 
 imprimirNombreEnMayuscula(luis.nombre)
 imprimirNombreEnMayuscula2(jari)
 imprimirNombreEnMayuscula3(luis)
+imprimirNombreEnMayuscula4(jari)
